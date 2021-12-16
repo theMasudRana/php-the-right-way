@@ -7,11 +7,12 @@ define('DATA_PATH', $root . 'data' . DIRECTORY_SEPARATOR);
 define('VIEWS_PATH', $root . 'views' . DIRECTORY_SEPARATOR);
 
 require APP_PATH . 'App.php';
+require APP_PATH . 'helpers.php';
 
 $files = getDataFiles(DATA_PATH);
 $transactions = [];
 foreach ($files as $file) {
-    $transactions = array_merge($transactions, getTransactions($file));
+    $transactions = array_merge($transactions, getTransactions($file, 'extractTransition'));
 }
-
+$totals = calculateTotals($transactions);
 require VIEWS_PATH . 'transactions.php';
