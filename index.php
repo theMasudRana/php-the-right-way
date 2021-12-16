@@ -43,16 +43,28 @@ print_r($array2)*/
 
 require 'helper.php';
 
-$items = [1, 2, 4, 34, 34, 51];
-$items2 = [4, 5, 6, 6, 7, 8];
+//$items = [1, 2, 4, 34, 34, 51];
+//$items2 = [4, 5, 6, 6, 7, 8];
+//$chanked_array = array_chunk($items, 3, true);
+////pp($chanked_array[1]);
+////pp(array_combine($items, $items2));
+//
+//$even = array_filter($items, fn($number) => $number % 2 === 0);
+//pp($even);
 
-pp(array_chunk($items, 2, true));
-//pp(array_combine($items, $items2));
-
-$even = array_filter($items, fn($number) => $number % 2 === 0);
-pp($even);
-
-
+//$dir = scandir(__DIR__);
+//pp($dir);
+//var_dump($dir);
+//mkdir('assets/css', 0777, true)
+/*if (file_exists('content.php')) {
+    echo filesize('content.php');
+    file_put_contents('content.php', 'My name is Masud');
+    echo filesize('content.php');
+} else {
+    echo 'File Not Found';
+}
+$content = file_get_contents('content.php');
+echo $content;*/
 ?>
 </body>
 </html>
