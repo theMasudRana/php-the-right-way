@@ -1,0 +1,15 @@
+{
+    "name": "code/namespace",
+    "autoload": {
+        "psr-4": {
+            "Animals\\": "Animals/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MasudXpeed",
+            "email": "mr.masudrana00@gmail.com"
+        }
+    ],
+    "require": {}
+}
