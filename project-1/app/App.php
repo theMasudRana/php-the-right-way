@@ -18,8 +18,10 @@ function getDataFiles(string $driPath): array
     return $files;
 }
 
+
 /**
  * @param string $fileName
+ * @param callable|null $transactionHandler
  * @return array
  */
 function getTransactions(string $fileName, ?callable $transactionHandler = null): array
